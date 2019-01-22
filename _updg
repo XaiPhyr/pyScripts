@@ -1,0 +1,16 @@
+#!/usr/bin/python
+
+import os
+
+def updg(word):
+  if word == 'updg':
+    os.system('apt-get update ; apt-get upgrade')
+  return word
+  
+def main():
+  print('')
+  enter = raw_input(">> ")
+  updg(word)
+  
+if __name__ == '__main__':
+  main()

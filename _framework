@@ -1,0 +1,16 @@
+#!/usr/bin/python
+
+import os
+
+def fWork(word):
+  if word in ['frame', 'work', 'framework']:
+    os.system('python3 ~/framework/manage.py runserver IP:8000
+   return(word)
+   
+def main():
+  print('')
+  enter = raw_input(">> ")
+  fWork(enter)
+  
+if __name__ == '__main__':
+  main()

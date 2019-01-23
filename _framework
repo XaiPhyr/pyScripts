@@ -5,7 +5,7 @@ import os
 def fWork(word):
   if word in ['frame', 'work', 'framework']:
     os.system('python3 ~/framework/manage.py runserver IP:8000
-   return(word)
+  return(word)
    
 def main():
   print('')

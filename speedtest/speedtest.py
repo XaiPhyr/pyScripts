@@ -2,6 +2,7 @@ from selenium import webdriver
 from bs4 import BeautifulSoup
 from urllib import request
 import requests
+from itertools import count
 import time
 import matplotlib.pyplot as plt
 
@@ -46,12 +47,15 @@ class WifiSpeed:
 
         x = []
         y = []
+        index = count()
 
         for i in range(len(item) - 1):
-            x.append(i + 1)
+            x.append(next(index))
             y.append(int(item[i]))
+            plt.cla()
+            plt.plot(x, y)
+            plt.pause(1)
 
-        plt.plot(x, y)
         plt.xlabel('No. of Data')
         plt.ylabel('Data Value')
         plt.title('Internet Speed')
